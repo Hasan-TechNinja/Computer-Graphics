@@ -420,8 +420,192 @@ void display()
         
     glEnd();
     // -------------------------------------------------------------------------------------------------------------------------
+//------------------------------------------RIVER--------------------------------------------------  
+    glBegin(GL_POLYGON);
+        glColor3ub(30,144,255);
+        glVertex2i(-200,-50);
+        glVertex2i(200,-30);
+        // glColor3ub(0,0,128);
+        glVertex2i(200,-200);
+        glVertex2i(-200,-200);
+        glVertex2i(-200,-50);   
+    glEnd();
+    glBegin(GL_POLYGON); // border
+        glColor3ub(128,128,0);
+        glVertex2i(-200,-45);
+        glVertex2i(200,-25);
+        glVertex2i(200,-30);
+        glVertex2i(-200,-50 );
+        glVertex2i(-200,-45);   
+    glEnd();
+    
+//-------------------------------------------CLOUD-------------------------------------------------
+	glPushMatrix();
+	glColor3ub(220,220,220);
+    glTranslatef(tx,0,0);
+    cloud(0,250); 
+    cloud(15,245);
+    cloud(10,240);
+    cloud(-2,243);
+
+    
+
+    cloud(-80,250); 
+    cloud(-95,245);
+    cloud(-90,240);
+    cloud(-90,243);
+    cloud(-75,243);
+
+    glPopMatrix();
+    tx+=.01;
+    if(tx>200)
+    tx=-200;
+
+    //-------------------------------------------BOAT-------------------------------------------------
+    glPushMatrix();
+	glColor3f(0.0f, 0.0f, 0.0f);//Black
+    glTranslatef(bx,0,0);
+    glBegin(GL_POLYGON);
+        glVertex2i(-180,-70);
+        glVertex2i(-165,-100);
+        glVertex2i(-150,-120);
+        glVertex2i(-150,-100);
+        glVertex2i(-180,-70);
+    glEnd();
+    glBegin(GL_POLYGON);
+        glVertex2i(-150,-100);
+        glVertex2i(-150,-120);
+        glVertex2i(-120,-125);
+        glVertex2i(-90,-120);
+        glVertex2i(-85,-100);
+        glVertex2i(-150,-100); 
+    glEnd();
+    glBegin(GL_POLYGON);
+        glVertex2i(-85,-100);
+        glVertex2i(-90,-120);
+        glVertex2i(-75,-105);  
+        glVertex2i(-60,-70);
+        glVertex2i(-85,-100);     
+    glEnd();
+    glColor3ub(211,211,211);
+    sun(-165,260); 
+    sun(-185,245);
+    sun(-180,240);
+    sun(-152,243);
+
+    //--------------------------BOAT FLAG----------------------------
+    glBegin(GL_POLYGON);
+        glColor3ub(173,216,230);
+        glVertex2i(-57,-40);
+        glVertex2i(-50,-10);
+        glVertex2i(-49,10);
+        glVertex2i(-50,30);
+        glVertex2i(-55,45);
+        glVertex2i(-63,57);
+        glVertex2i(-73,68); // end
+        glVertex2i(-105,45);
+        glVertex2i(-50,-10);
+        
+                   
+    glEnd();
+    glBegin(GL_POLYGON);
+        glColor3ub(173,216,230);
+        
+        glVertex2i(-68,-70);
+        glVertex2i(-57,-40);
+        glVertex2i(-85,10);
+        glVertex2i(-68,-70);                
+    glEnd();
+    glBegin(GL_POLYGON);
+        glColor3ub(173,216,230);
+        glVertex2i(-85,-100);
+        glVertex2i(-68,-70);
+        glVertex2i(-80,-10);
+        glVertex2i(-85,-100);
+                        
+    glEnd();
+
+    glColor3ub(139,69,19);
+    glRecti(-88,80,-86,-100);  // Boat stand
+    glBegin(GL_POLYGON);
+        glColor3f(0.55,0.27,0.0745);//wood color
+        glVertex2i(-85,-100);
+        glVertex2i(-87,-80);
+        glVertex2i(-93,-62);
+        glVertex2i(-97,-55);
+        glVertex2i(-105,-50);
+        glVertex2i(-120,-48);
+        glVertex2i(-120,-100);
+        glVertex2i(-85,-100);
+          
+    glEnd();
+    
+    glBegin(GL_POLYGON);
+        glColor3f(0.55,0.27,0.0745);//wood color
+        glVertex2i(-150,-100);
+        glVertex2i(-148,-80);
+        glVertex2i(-142,-62);
+        glVertex2i(-138,-55);
+        glVertex2i(-130,-50);
+        glVertex2i(-115,-48);
+        glVertex2i(-115,-100);
+        glVertex2i(-150,-100);
+        
+          
+    glEnd();
+    
+//--------------------------BOAT LINE----------------------------
+    glBegin(GL_LINE_STRIP);
+        glColor3f(0.0f, 0.0f, 0.0f);//Black
+        glVertex2i(-142,-62);
+        glVertex2i(-73,68);
+        glVertex2i(-73,63);
+
+        glVertex2i(-142,-62);
+        glVertex2i(-105,45);
+    glEnd();
+    glBegin(GL_LINE_STRIP);
+        glColor3f(0.0f, 0.0f, 0.0f);//Black
+        glVertex2i(-148,-80);
+        glVertex2i(-87,-80);
+    glEnd();
+    glBegin(GL_LINE_STRIP);
+        glColor3f(0.0f, 0.0f, 0.0f);//Black
+        glVertex2i(-142,-62);
+        glVertex2i(-93,-62);      
+    glEnd();
+    glBegin(GL_LINE_STRIP);
+        glColor3f(0.0f, 0.0f, 0.0f);//Black
+        glVertex2i(-115,-48);
+        glVertex2i(-115,-100);     
+    glEnd();
+    glBegin(GL_LINE_STRIP);
+        glColor3f(0.0f, 0.0f, 0.0f);//Black
+        glVertex2i(-130,-50);
+        glVertex2i(-130,-100);     
+    glEnd();
+    glBegin(GL_LINE_STRIP);
+        glColor3f(0.0f, 0.0f, 0.0f);//Black
+        glVertex2i(-100,-52);
+        glVertex2i(-100,-100);     
+    glEnd();
+    
+
+
+    glPopMatrix();
+    bx+=.03;
+    if(bx>270)
+    bx=-180;
+
+    
+    glutPostRedisplay();
+    glColor3ub(255,255,255);//
+    glRecti(-210,310,-200,-210);
+    glRecti(200,310,210,-210);
+//--------------------------------------------------------------------------------------------
     glFlush();   
 }
+
 
 
 
