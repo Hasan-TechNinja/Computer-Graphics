@@ -39,7 +39,7 @@ void cloud(double x, double y)
 void sun(double x, double y)
 {
    
-    
+//-----------------------------------Gacher pata-----------------------------------
     glBegin(GL_TRIANGLE_FAN);
         for(i=0;i<360;i++)
         {
@@ -56,7 +56,7 @@ void sun(double x, double y)
         
     
 }
-// ------------------------------------Fence-------------------------------------------------
+// ------------------------------------Daffodil bambo-------------------------------------------------
 void fence(int x)
 {
     glBegin(GL_POLYGON);  
@@ -89,7 +89,7 @@ void display()
         glRecti(-200,300,200,100);
 //-----------------------------------field------------------------------
     glBegin(GL_POLYGON);  
-        glColor3ub(0,100,0);//green
+        glColor3ub(0,140,0);
         
         glVertex2i(-200,100);
         glVertex2i(-100,160);
@@ -97,11 +97,11 @@ void display()
         glVertex2i(50,70);
         glVertex2i(100,180);
         glVertex2i(200,100);
-        glColor3ub(0,100,0);//gold
+        glColor3ub(0,100,0);
         glVertex2i(200,-200);
         
         glVertex2i(-200,-200);
-        glColor3ub(0,100,0);//gold
+        glColor3ub(0,100,0);
         glVertex2i(-200,100);
         
     glEnd();
@@ -109,7 +109,7 @@ void display()
 //-------------------SUN-------------------------
     glColor3ub(255,215,0);
     sun(90,250);
-// ------------------------------------fence--------------------------
+// ------------------------------------Daffodil bambo--------------------------
     int x=0;
     for(int i=0;i<39;i++)
     {
@@ -123,7 +123,7 @@ void display()
     glRecti(-200,85,200,80);
     
     
-//-------------------------------------TREE------------------------
+//------------------------------------Daffodil-TREE------------------------
     glColor3ub(139,69,19);//
     glRecti(-20,200,-13,140);
     glColor3ub(0,100,0);
@@ -133,19 +133,19 @@ void display()
     sun(-30,175);
     sun(-0,170);
     glBegin(GL_POLYGON); // Main Tree // first part
-        glColor3ub(139,69,19);//
+        glColor3ub(139,69,19);
         glVertex2i(-170,160);
         glVertex2i(-168,120);
-        glColor3ub(139,69,19);//
+        glColor3ub(139,69,19);
         glVertex2i(-178,40);
         glVertex2i(-145,40);
-        glColor3ub(139,69,19);//
+        glColor3ub(139,69,19);
         glVertex2i(-153,120);
         glVertex2i(-150,160);
         glVertex2i(-170,160);   
     glEnd();
     glBegin(GL_POLYGON);  // Main Tree // second part
-        glColor3ub(139,69,19);//
+        glColor3ub(139,69,19);
         glVertex2i(-153,100);
         glVertex2i(-100,200); 
         glVertex2i(-95,200); 
@@ -153,7 +153,7 @@ void display()
         glVertex2i(-153,100); 
     glEnd();
     glBegin(GL_POLYGON);  // Main Tree // third part
-        glColor3ub(139,69,19);//
+        glColor3ub(139,69,19);
         glVertex2i(-170,160);
         glVertex2i(-185,210);
         glVertex2i(-190,210);
@@ -162,7 +162,7 @@ void display()
         
     glEnd();
     glBegin(GL_POLYGON);  // Main Tree // fourth part
-        glColor3ub(139,69,19);//
+        glColor3ub(139,69,19);
         glVertex2i(-160,160);
         glVertex2i(-150,210);
         glVertex2i(-140,210);
@@ -171,7 +171,7 @@ void display()
         
         
     glEnd();
-    glColor3ub(0,128,0);//leaf
+    glColor3ub(0,128,0);//Gacher pata
         sun(-95,200);
         sun(-80,180);
         sun(-110,180);
@@ -192,7 +192,7 @@ void display()
     
     glBegin(GL_POLYGON);  // First part
 
-        glColor3ub(0,100,0);//
+        glColor3ub(112, 108, 102);//
         glVertex2i(115,65);
         glVertex2i(95,5);
         glVertex2i(145,5);
@@ -240,11 +240,11 @@ void display()
         glVertex2i(120,85);
 
     glEnd();
-    glColor3ub(87, 80, 71);//golden rod // tubewell third part
+    glColor3ub(87, 80, 71);//golden rod 
     glRecti(123,100,126,85);
 
     glBegin(GL_POLYGON);  // tubewell fourth part
-        glColor3ub(139,69,19);//saddle brown
+        glColor3ub(139,69,19);
         glVertex2i(126,100);
         glVertex2i(128,102);
         glVertex2i(128,110);
@@ -269,11 +269,11 @@ void display()
     glEnd();
     glColor3ub(210,105,30);//golden rod //tubewell last part
     glRecti(123,29,127,20);
-    glColor3ub(139,69,19);//saddle brown
+    glColor3ub(139,69,19);
     glRecti(118,22,132,14);
-// --------------------------------------- HOUSE one----------------------------
+// ---------------------------------------Abdus Salam Hasan's HOUSE ----------------------------
     glBegin(GL_POLYGON);  // first Part
-        glColor3ub(90,10,90);//gray
+        glColor3ub(90,10,90);
         glVertex2i(-58,115);
         glVertex2i(-75,145);
         glVertex2i(-115,150);//point
@@ -283,7 +283,7 @@ void display()
         
     glEnd();
     glBegin(GL_POLYGON);  // second Part
-        glColor3ub(90,10,90);//maroon   
+        glColor3ub(90,10,90);
         glVertex2i(-115,150);
         glVertex2i(-130,100);
         glVertex2i(-120,100);//point
@@ -291,7 +291,7 @@ void display()
         glVertex2i(-115,150);  
     glEnd();
     glBegin(GL_POLYGON);  // third Part
-        glColor3ub(166, 161, 154);//
+        glColor3ub(166, 161, 154);
         glVertex2i(-108,137);
         glVertex2i(-120,100);
         glVertex2i(-120,45);
@@ -309,9 +309,9 @@ void display()
         glVertex2i(-90,100);
         
     glEnd();
-    glColor3ub(97, 78, 50);//maroon // Door One
+    glColor3ub(97, 78, 50);// Door One
         glRecti(-75,80,-65,40);
-    glColor3ub(97, 78, 50);//maroon // Door One
+    glColor3ub(97, 78, 50);// Door One
         glRecti(-110,90,-100,70);
     glBegin(GL_POLYGON);  // third Part (lower part 1)
         glColor3ub(0,0,0);//
@@ -322,7 +322,7 @@ void display()
         glVertex2i(-90,40);
         
     glEnd();
-    glBegin(GL_POLYGON);  // third Part (lower part 2)
+    glBegin(GL_POLYGON);  // third Part 
         glColor3ub(0,0,0);//
         glVertex2i(-90,40);
         glVertex2i(-55,45);
@@ -336,7 +336,7 @@ void display()
 
 
 
-//-------------------------------------------  HOUSE  two  -------------------------------------------------
+//-------------------------------------------Tasriful Hasan Masrik HOUSE------------------------------------------------
     glBegin(GL_POLYGON);  // First part
 
         glColor3ub(209, 91, 91);//midnight blue
@@ -352,7 +352,7 @@ void display()
     
 
     glBegin(GL_POLYGON);  // Second Part
-    glColor3ub(133, 130, 127);//midnight blue
+    glColor3ub(133, 130, 127);
         glVertex2i(-60,90);
         glVertex2i(-60,30);
         glVertex2i(-10,25);
@@ -361,12 +361,12 @@ void display()
      
 
 //---------------------------------------Door------------------------------------------
-    glColor3ub(122, 89, 55);//midnight blue
+    glColor3ub(122, 89, 55);
     glRecti(-45,70,-30,27);
 
 //--------------------------------------------------------------------------
     glBegin(GL_POLYGON);   // Third part 
-    glColor3ub(171, 167, 162);//midnight blue
+    glColor3ub(171, 167, 162);
         glVertex2i(-10,25);
         glVertex2i(18,35);
         glVertex2i(18,100);
@@ -415,17 +415,15 @@ void display()
         glVertex2i(-10,15);
         glVertex2i(-10,25);
         
-        
-        
+    
         
     glEnd();
     // -------------------------------------------------------------------------------------------------------------------------
-//------------------------------------------RIVER--------------------------------------------------  
+//------------------------------------------ Daffodil Lake --------------------------------------------------  
     glBegin(GL_POLYGON);
         glColor3ub(30,144,255);
         glVertex2i(-200,-50);
         glVertex2i(200,-30);
-        // glColor3ub(0,0,128);
         glVertex2i(200,-200);
         glVertex2i(-200,-200);
         glVertex2i(-200,-50);   
@@ -461,7 +459,7 @@ void display()
     if(tx>200)
     tx=-200;
 
-    //-------------------------------------------BOAT-------------------------------------------------
+    //-------------------------------------------Daffodil Boat-------------------------------------------------
     glPushMatrix();
 	glColor3f(0.0f, 0.0f, 0.0f);//Black
     glTranslatef(bx,0,0);
@@ -591,12 +589,12 @@ void display()
     glEnd();
     
 
-
+//--------------------------------------------Boat speed 0----------------------------------------
     glPopMatrix();
     bx+=.03;
     if(bx>270)
     bx=-180;
-
+//-------------------------------------------------Boat spped 0 end----------------------------------
     
     glutPostRedisplay();
     glColor3ub(255,255,255);//
@@ -605,8 +603,6 @@ void display()
 //--------------------------------------------------------------------------------------------
     glFlush();   
 }
-
-
 
 
 
