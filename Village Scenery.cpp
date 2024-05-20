@@ -461,7 +461,7 @@ void display()
 
     //-------------------------------------------Daffodil Boat-------------------------------------------------
     glPushMatrix();
-	glColor3f(0.0f, 0.0f, 0.0f);//Black
+	glColor3f(0.0f, 0.0f, 0.0f);
     glTranslatef(bx,0,0);
     glBegin(GL_POLYGON);
         glVertex2i(-180,-70);
@@ -549,12 +549,11 @@ void display()
         glVertex2i(-115,-100);
         glVertex2i(-150,-100);
         
-          
     glEnd();
     
 //--------------------------BOAT LINE----------------------------
     glBegin(GL_LINE_STRIP);
-        glColor3f(0.0f, 0.0f, 0.0f);//Black
+        glColor3f(0.0f, 0.0f, 0.0f);
         glVertex2i(-142,-62);
         glVertex2i(-73,68);
         glVertex2i(-73,63);
@@ -563,27 +562,27 @@ void display()
         glVertex2i(-105,45);
     glEnd();
     glBegin(GL_LINE_STRIP);
-        glColor3f(0.0f, 0.0f, 0.0f);//Black
+        glColor3f(0.0f, 0.0f, 0.0f);
         glVertex2i(-148,-80);
         glVertex2i(-87,-80);
     glEnd();
     glBegin(GL_LINE_STRIP);
-        glColor3f(0.0f, 0.0f, 0.0f);//Black
+        glColor3f(0.0f, 0.0f, 0.0f);
         glVertex2i(-142,-62);
         glVertex2i(-93,-62);      
     glEnd();
     glBegin(GL_LINE_STRIP);
-        glColor3f(0.0f, 0.0f, 0.0f);//Black
+        glColor3f(0.0f, 0.0f, 0.0f);
         glVertex2i(-115,-48);
         glVertex2i(-115,-100);     
     glEnd();
     glBegin(GL_LINE_STRIP);
-        glColor3f(0.0f, 0.0f, 0.0f);//Black
+        glColor3f(0.0f, 0.0f, 0.0f);
         glVertex2i(-130,-50);
         glVertex2i(-130,-100);     
     glEnd();
     glBegin(GL_LINE_STRIP);
-        glColor3f(0.0f, 0.0f, 0.0f);//Black
+        glColor3f(0.0f, 0.0f, 0.0f);
         glVertex2i(-100,-52);
         glVertex2i(-100,-100);     
     glEnd();
@@ -603,7 +602,6 @@ void display()
 //--------------------------------------------------------------------------------------------
     glFlush();   
 }
-
 
 
 int main(int argc,char *argv[])

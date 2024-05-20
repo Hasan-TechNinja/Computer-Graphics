@@ -14,6 +14,8 @@ void display() {
   glVertex2f(-2.0f, 2.0f);
   glEnd();
 
+
+
   glFlush();
 }
 
